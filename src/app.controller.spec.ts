@@ -28,12 +28,12 @@ describe('AppController', () => {
 
     // Que tenga 4 digitos
     it('Validete size of fortune number == 4 digits', () => {
-      expect(typeof appController.getFortune().toString().length).toBe(4);
+      expect( appController.getFortune().toString().length).toBe(4);
     });
 
     // Validar que sea igua a 4 digitos
     it('Validete size of fortune number <= 4 digits', () => {
-      expect(typeof appController.getFortune().toString().length).toBeLessThanOrEqual(4);
+      expect( appController.getFortune().toString().length).toBeLessThanOrEqual(4);
     });
 
     // Validar que sel numero sea aleatorio

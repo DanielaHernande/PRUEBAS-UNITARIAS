@@ -8,6 +8,6 @@ export class AppService {
   }
 
   getFortune(): number {
-    return 0
+    return Math.floor(1000 + Math.random() * 9000);
   }
 }
